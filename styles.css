@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESIGN MOBILE */
+html, body {
+    overflow: hidden;
+}
+body {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    background-image: url('images/pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 21rem;
+    background-position-y: 14%;
+    background-position-x: 51%;
+    height: 100vh;
+}
+
+.wrap__content {
+    display: flex; 
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.background img{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: auto;
+    height: 4.5rem;
+    z-index: -1;
+}
+
+.card__slider {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-top: 1rem;
+    background-image: url('images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 2rem;
+    background-size: 4rem;
+    font-weight: 300;
+}
+
+
+/* BTN DESIGN */ 
+
+.btn__slider {
+    transform: translateY(-22px);
+    background-color: #FFFFFF;
+    width: 5.5rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8rem 0;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.48);
+}
+
+
+/* !!! CONTENT JHON !!!*/
+
+.card__slider .img__john {
+    display: none; 
+    height: auto;
+    width: 17rem;
+}
+.content_John {
+    display: none; 
+}
+.card__name-job_John {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-size: 0.5em;
+    margin-top: 2rem;
+    font-size: 1em;
+}
+.card__name-job_John p:last-child {
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+}
+.card__slider img{
+    border-radius: 0.5rem;
+}
+
+/* !! CONTENT TANYA !!! */
+
+.card__slider .img__tanya {
+    display: block;
+    height: auto; 
+    width: 17rem;
+}
+.content_Tanya {
+    display: block;
+}
+.card__name-job_Tanya {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 1rem;
+}
+.card__name-job_Tanya p:last-child {
+    margin-left: 0.5rem;
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+    
+}
+
+
+/* DESIGN DESKTOP */
+@media screen and (min-width: 71rem) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        font-weight: 300;
+        background-image: url('images/pattern-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 43rem;
+        background-position-y: 53%;
+        background-position-x: 80%;
+
+    }
+
+    .background img{
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        width: auto;
+        height: 12rem;
+    }
+    .card {
+        width: 80%;
+        padding: 7rem;
+
+        }
+
+    .wrap__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position:relative;
+        flex-direction: row; 
+    }
+
+    .card__content  {
+        position: absolute;
+        width: 62%;
+        left: 0%;
+        background-image: url('images/pattern-quotes.svg');
+        background-repeat: no-repeat;
+        background-position-x: 7rem;
+        padding-top: 4rem;
+        align-items:initial;
+        background-size: auto;
+    }
+
+    .card__slider img{
+        width: auto;
+        box-shadow: 0px 30px 34px -9px rgba(0,0,0,0.37);
+    }
+
+    .card__slider {
+        display:flex;
+        flex-direction: column;
+    }
+
+    /* BTN STYLES */ 
+
+    .btn__slider {
+        transform: translateY(-22px) translateX(-155px);
+        background-color: #FFFFFF;
+        width: 5.5rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 0.8rem 0;
+        border-radius: 2rem;
+        box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.48);
+    }
+
+    .btn__slider img:hover {
+        filter: invert(0.5) sepia(5) saturate(5) hue-rotate(175deg);
+        transition: all .5s ease;
+    }
+    
+    
+    /* !!! CONTENT JHON !!!*/
+    .card__slider .img__john {
+        display: none; 
+    }
+    .content_John {
+        display: none; 
+    }
+
+    .card__name-job_John {
+        display: none;
+        flex-direction: row; 
+        margin-top: 0.5rem;
+        font-weight: 700;
+        font-size: 0.5em;
+        margin-top: 2rem; 
+    }
+
+    .none {
+        display: none; 
+    }
+
+    .card__name-job_John p:last-child {
+        margin-left: 0.5rem;
+        font-weight: 300;
+        color: hsl(240, 18%, 77%);
+        
+    }
+
+    .card__slider img{
+        border-radius: 0.5rem;
+    }
+
+    /* !!! CONTENT TANYA !!! */
+
+    .card__slider .img__tanya {
+        display: block;
+        width: 33.75rem;
+        height: auto; 
+    }
+    .content_Tanya {
+        display: block;
+    }
+
+    .card__name-job_Tanya {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5rem;
+        font-weight: 700;
+        font-size: 0.5em;
+        margin-top: 2rem;
+    }
+
+    .card__name-job_Tanya p:last-child {
+        margin-left: 0.5rem;
+        font-weight: 300;
+        color: hsl(240, 18%, 77%);
+        
+    }
+
+} 
+
+
